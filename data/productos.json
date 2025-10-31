@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "Laptop Ultraligera X1",
+        "precio": 1200.50,
+        "stock": 15,
+        "categoriaId": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Teclado Mecánico RGB",
+        "precio": 85.99,
+        "stock": 30,
+        "categoriaId": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Camiseta Algodón Azul (Talla M)",
+        "precio": 25.00,
+        "stock": 50,
+        "categoriaId": 2
+    }
+]
