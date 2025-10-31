@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "nombre": "Electrónica"
+        "nombre": "Periféricos"
     },
     {
         "id": 2,
-        "nombre": "Ropa y Accesorios"
+        "nombre": "Componentes"
     }
 ]
