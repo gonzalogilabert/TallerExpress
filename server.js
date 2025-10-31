@@ -1,17 +1,8 @@
-// Importar el módulo de Express
-import express from "express";
-// Crear una instancia de la aplicación Express
+const express = require('express');
 const app = express();
-// Middleware para poder procesar datos en formato JSON
 app.use(express.json());
-
-// Definir una ruta básica (endpoint) de prueba
-app.get("/", (req, res) => {
-res.send("🚀 Servidor Express funcionando correctamente, prueba 2");
-});
-// Definir el puerto donde escuchará el servidor
-const PORT = 3000;
-// Iniciar el servidor y escuchar peticiones en el puerto definido
-app.listen(PORT, () => {
-console.log(`✅ Servidor en ejecución: http://localhost:${PORT}`);
-});
+// Importar rutas
+app.use('/api/productos', require('./routes/productosRoutes'));
+//definir el resto de routes
+//Mejora solicitada, guardar en un log de json todas las llamadas a la API
+app.listen(3000, () => console.log('Servidor escuchando en http://localhost:3000'));
