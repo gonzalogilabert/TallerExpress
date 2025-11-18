@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
 // Importa tus rutas reales (si ya las tienes)
 app.use('/api/productos', require('./routes/productosRoutes'));
 app.use('/api/categorias', require('./routes/categoriasRoutes'));
+app.use('/api/clientes', require('./routes/clientesRoutes'));
+app.use('/api/proveedores', require('./routes/proveedoresRoutes'));
+app.use('/api/pedidos', require('./routes/pedidosRoutes'));
+app.use('/api/carritos', require('./routes/carritosRoutes'));
 // Añade las demás rutas aquí...
 
 app.listen(3000, () => console.log('Servidor iniciado en http://localhost:3000'));
